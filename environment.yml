@@ -1,0 +1,13 @@
+name: jupyter-actions
+channels:
+    - conda-forge
+dependencies:  
+  - jupyter
+  - nbformat
+  - nbconvert
+  - papermill
+  - numpy
+  - pandas
+  - folium
+  - branca
+  - matplotlib  
