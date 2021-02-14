@@ -34,7 +34,8 @@ jobs:
       - name: Execute all Notebooks and publish in docs
         shell: bash
         run: |
-          conda init bash          
+          conda init bash     
+          source /home/runner/.bashrc     
           conda activate jupyter-actions
           cat retrieveAppStats.ipynb | papermill output.ipynb
           jupyter nbconvert  output.ipynb --to html --output docs/index.html
