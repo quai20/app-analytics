@@ -1,9 +1,9 @@
 name: Run-Notebooks
 
 on:
- push:
-   branches:
-   - master
+  schedule:
+  - cron: "0 0 * * *"
+
     
 jobs:
   run-notebook:
@@ -37,7 +37,7 @@ jobs:
           conda init bash     
           source /home/runner/.bashrc     
           conda activate jupyter-actions
-          cat retrieveAppStats.ipynb | papermill output.ipynb
+          papermill retrieveAppStats.ipynb output.ipynb
           jupyter nbconvert  output.ipynb --to html --output docs/index.html
       
       - name: Git Auto Commit
