@@ -11,4 +11,6 @@ dependencies:
   - folium
   - branca
   - matplotlib 
-  - bokeh 
+  - bokeh
+  - holoviews
+  - panel 
