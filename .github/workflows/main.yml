@@ -1,6 +1,7 @@
 name: Run-Notebooks
 
 on:
+  push
   schedule:
   - cron: "0 0 */15 * *"
 
