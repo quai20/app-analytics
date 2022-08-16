@@ -30,6 +30,8 @@ jobs:
           activate-environment: jupyter-actions
           environment-file: environment.yml
           python-version: 3.7
+          mamba-version: "*"
+          use-mamba: true
       
       - name: Execute all Notebooks and publish in docs
         shell: bash
