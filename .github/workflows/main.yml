@@ -3,6 +3,7 @@ name: Run-Notebooks
 on:   
   schedule:
   - cron: "0 0 */15 * *"
+  workflow_dispatch:
 #  push:
 #    branches:
 #      - master
