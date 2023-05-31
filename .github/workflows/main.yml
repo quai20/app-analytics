@@ -1,9 +1,6 @@
 name: Run-Notebooks
 
-on: 
-  push : 
-      branches:
-          - master
+on:   
   schedule:
   - cron: "0 0 */15 * *"
 #  push:
