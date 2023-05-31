@@ -6,3 +6,4 @@ A github workflow is set up to (every 15 days) :
 - install conda env
 - run the notebook with papermill
 - save the executed notebook in html as the doc page
+..
