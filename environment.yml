@@ -12,5 +12,5 @@ dependencies:
   - branca
   - matplotlib 
   - bokeh
-  - holoviews
+  - holoviews<1.15
   - panel 
